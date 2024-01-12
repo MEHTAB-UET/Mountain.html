@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <style>
+      body {
+        background-image: url(pexels-billel-moula-540518.jpg);
+        background-size: cover;
+        /* overflow: hidden; */
+      }
+
+      .rowOfSignIn {
+        margin-left: 90%;
+        margin-top: 2vh;
+      }
+      .signinbutton {
+        background-color: yellow;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 10dvb;
+      }
+      .signinbutton:hover {
+        transform: scale(1.1);
+        /* Scale up on hover */
+        background-color: rgb(166, 166, 66);
+        cursor: pointer;
+      }
+      .first-para {
+        width: 28vw;
+        color: white;
+        font-size: 18px;
+      }
+      .content {
+        color: azure;
+        font-size: 19px;
+      }
+      .container > h1 {
+        color: white;
+
+        font-size: 58px;
+      }
+      .containerOFFullname {
+        display: grid;
+        grid-template-columns: 10vw 10vw;
+        grid-template-rows: 5vh 5vh;
+        row-gap: 3vw;
+        column-gap: 2vw;
+      }
+      .container {
+        margin-left: 82px;
+      }
+      input {
+        border-radius: 10dvb;
+        height: 28px;
+      }
+      .container2 {
+        display: grid;
+        grid-template-columns: 22vw;
+        grid-template-rows: 4vh 6vh 4vh 10vh 4vh 10vh 4vh 10vh;
+        /* row-gap: 1px; */
+        /* grid-template-rows: 1vh; */
+      }
+      #fullname {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        order: 1;
+      }
+      #fullname2 {
+        order: 2;
+        /* grid-row-start: 3;
+        grid-row-end: 4; */
+      }
+      #email {
+        order: 3;
+      }
+      #email2 {
+        order: 4;
+      }
+      #password {
+        order: 5;
+      }
+      #password2 {
+        order: 6;
+      }
+      #reEnterPassword {
+        order: 7;
+      }
+      #reEnterPassword2 {
+        order: 8;
+      }
+
+      #button {
+        margin-left: 3vw;
+        margin-top: 5vh;
+        background-color: yellow;
+        width: 15vw;
+        height: 6vh;
+        border: none;
+      }
+      #button:hover {
+        background-color: rgb(166, 166, 66);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <img src="pexels-billel-moula-540518.jpg" /> -->
+    <div class="header">
+      <div class="rowOfSignIn">
+        <button class="signinbutton">Signin</button>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Create an account</h1>
+      <p class="first-para">
+        Register to access all the features of our service.Manage your events in
+        one place.It's free!
+      </p>
+
+      <div class="containerOFFullname">
+        <h6 class="content" id="firstName">First Name</h6>
+        <h6 class="content" id="lastName">Last Name</h6>
+        <input type="text" placeholder="  Ameena" />
+        <input type="text" placeholder="  Tasneem " />
+      </div>
+      <div class="container2">
+        <h6 class="content" id="fullname">Full Name</h6>
+        <input type="text" id="fullname2" placeholder="  AmeenaTasneem" />
+        <h6 class="content" id="email">Email</h6>
+        <input
+          type="email"
+          id="email2"
+          placeholder="  Ameenatasneem@gmail.com"
+        />
+        <h6 class="content" id="password">Password</h6>
+        <input type="password" id="password2" placeholder="*******" />
+        <h6 class="content" id="reEnterPassword">Re-EnterPassword</h6>
+        <input type="password" id="reEnterPassword2" placeholder="  *******" />
+        <br />
+      </div>
+
+      <input type="button" value="Next" id="button" />
+    </div>
+  </body>
+</html>
